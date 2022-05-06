@@ -1,0 +1,721 @@
+{
+  "dapp_list": [
+    {
+      "url": "https://quickswap.exchange/#/swap",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "QuickSwap",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/6017/quickswap-dapp-defi-matic-logo-166x166_c02d55557213ab013ed24d21924716c9.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://www.crazydefenseheroes.com/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Crazy Defense Heroes",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/6740/crazydefenseheroes-dapp-games-ethereum-logo-166x166_577192efa5066513812295c933609c8d.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://app.gamee.com/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Arc8App",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/9152/arc8bygamee-dapp-games-matic-logo-166x166_ad09c6e8eff83f51c499e9988a1cba0c.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://sunflower-land.com/index.html",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Sunflower Farmers",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/14612/sunflowerland-dapp-games-matic-logo-166x166_ab7e8db38fda6267cfa74a76c81e46a0.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://aavegotchi.com/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Aavegotchi",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/5824/aavegotchi-dapp-defi-matic-logo-166x166_6419c9c054c875fcfc43bc780ccc6b87.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://app.sushi.com/swap",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "SUSHISWAP",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/4359/sushi-dapp-defi-ethereum-logo-166x166_c39653c7786544886be2a297e965bc25.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x000000"
+    },
+    {
+      "url": "https://bridge.connext.network/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Connext",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/14956/connext-dapp-defi-ethereum-logo-166x166_1cc6baadf074435dd06175001b7d638f.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "10",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://apeswap.finance/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "ApeSwap",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/5635/apeswap-dapp-defi-bsc-logo-166x166_9df05c9ccc867c7aecea17df8e7a910e.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://tofunft.com/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "tofuNFT",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/6253/tofunft-dapp-marketplaces-bsc-logo-166x166_c7426742210207a2213a5f97ddcbda46.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "128",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "66",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "8217",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "43114",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "10",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://cbridge.celer.network/#/transfer",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "CelerNetwork (CFX)",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/15155/celernetwork-dapp-defi-ethereum-logo-166x166_39cfb83fb94837acf74a1e3c75c5b396.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "66",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "10",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://app.1inch.io/#/137/swap/MATIC/DAI",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xFFFFFF",
+      "title": "1inch (Polygon)",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/1528/1inchexchange-dapp-exchanges-ethereum-logo-166x166_83d013785ed1ad1894c7ce53dca39dc9.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x000000"
+    },
+    {
+      "url": "https://market.playdapp.com/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "PlayDapp Marketplace",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/3781/playdappmarketplace-dapp-marketplaces-eth-logo-166x166_d87949be7f4d1a2f5f060ab0af4e1ae0.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://app.uniswap.org/#/swap?chain=mainnet",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Uniswap",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/7000/uniswapv3-dapp-defi-ethereum-logo-166x166_097ebc5b6cb5e21fd63117263e330cf4.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://app.aave.com/markets",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0x000000",
+      "title": "Aave",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/3340/aave-marketplaces-eth-logo-166x166_0690b9d8333567744f0fbea17a4d4e7b.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0xFFFFFF"
+    },
+    {
+      "url": "https://synapseprotocol.com",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Synapse",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/13910/synapse-dapp-defi-ethereum-logo-166x166_0754252bed6585140d65e41e6c6882a7.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://polygon.beefy.finance/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0x000000",
+      "title": "Beefy.Finance",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/4601/beefyfinance-dapp-defi-bsc-logo-166x166_153873cafb00fcab59e5f70dbce0c34a.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0xFBF9F6"
+    },
+    {
+      "url": "https://www.gelato.network/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Gelato",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/6464/gelato-dapp-defi-ethereum-logo-166x166_bd387efa72ffc41d3017ee35c4dd9390.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "250",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "10",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://app.dodoex.io/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "DODO",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/14738/dodo-dapp-exchanges-ethereum-logo-166x166_8ce6c9bccb9f280fffee15f01928acc4.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "128",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "66",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "43114",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "42161",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x1A1A1A"
+    },
+    {
+      "url": "https://www.cryptoblades.io/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "CryptoBlades",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/7291/cryptoblades-dapp-games-bsc-logo-166x166_e75a7fa80f9a740dfbedcad7c02f0147.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "128",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://synapseprotocol.com",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Synapse",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/13910/synapse-dapp-defi-ethereum-logo-166x166_0754252bed6585140d65e41e6c6882a7.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://www.transit.finance/",
+      "full_screen": 0,
+      "source": 0,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0x000000",
+      "title": "Transit Swap",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/13841/transitswap-dapp-exchanges-ethereum-logo-166x166_eea4ad839f38119e644e00421c88ede8.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "network": "EOS"
+        },
+        {
+          "network": "TRX"
+        },
+        {
+          "network": "BTC"
+        },
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        },
+        {
+          "network": "polkadot",
+          "ss58": "0"
+        },
+        {
+          "chain_id": "128",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "70",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "66",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0xE1EBFE"
+    },
+    {
+      "url": "https://www.mycryptoheroes.net",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0x000000",
+      "title": "My Crypto Heroes",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/917/mycryptoheroes-dapp-games-eth-logo-166x166_dccc0df3ec2cfe35ab367a70c6f14ba6.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x333333"
+    },
+    {
+      "url": "https://decentral.games/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Decentral Games",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/13022/decentralgamesdg-dapp-games-matic-logo-166x166_c0e75dcdf6917a790cd13c9870fca8f6.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://allbridge.io/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Allbridge Polygon",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/10675/allbridge-dapp-defi-ethereum-logo-166x166_d9006f22190ddaa59d283be042d375f7.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "128",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "43114",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://polycat.finance/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Polycat Finance",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/6577/polycatfinance-dapp-defi-matic-logo-166x166_9ff6474760248c32a464f2c6ebcf2a47.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://app.nftrade.com/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0x000000",
+      "title": "NFTrade",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/8498/nftrade-dapp-marketplaces-ethereum-logo-166x166_d7ac827e1d6995607f18143716579ad3.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "43114",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0xFFFFFF"
+    },
+    {
+      "url": "https://solo.top/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0x000000",
+      "title": "Solo.top",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/6357/solotop-dapp-defi-bsc-logo-166x166_f50121d2ce2e1f58fd12d8c74abd0bd9.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "128",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0xFFFFFF"
+    },
+    {
+      "url": "https://bravefrontierheroes.com/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "BRAVE FRONTIER HEROES",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/6873/bravefrontierheroes-dapp-games-matic-logo-166x166_7a20dbb6da9466062bb94a015db74acc.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x435C73"
+    },
+    {
+      "url": "https://neondistrict.io/?utm_source=TokenPocket",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Neon District",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/5458/neondistrict-dapp-games-matic-logo-166x166_0900bc43f4fe5d7b603559c0fc8bef61.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x121212"
+    },
+    {
+      "url": "https://cryptospells.jp/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "CryptoSpells",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/9472/cryptospells-dapp-games-matic-logo-166x166_2cd30c86d69942284c3609e227b971cd.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x191C1D"
+    },
+    {
+      "url": "https://adamant.finance/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Adamant",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/6632/adamant-dapp-defi-matic-logo-166x166_4a01ad999e74ac93960fcddf90c67785.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "42161",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    }
+  ],
+  "timestamp": "2022-04-20 12:04:17",
+  "protocol": "TIP-001",
+  "name": "Polygon",
+  "url": "https://gitee.com/dapplist/dappcom/raw/master/dapp-list/Polygon.json",
+  "logo_uri": "https://i.postimg.cc/Gt96RmsS/Matic-1x.png",
+  "version": "1.0"
+}

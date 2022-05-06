@@ -1,0 +1,64 @@
+{
+  "dapp_list": [
+    {
+      "url": "https://defikingdoms.com/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "DeFi Kingdoms",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/8948/defikingdoms-dapp-games-harmony-logo-166x166_2ba00f5a1d4f9120a2a9c8f83cb14591.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1666600000",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://app.tranquil.finance/markets",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Tranquil Finance",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/14285/tranquilfinance-dapp-defi-harmony-logo-166x166_fb6e794ee9a057703abda84a1bbfc26f.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1666600000",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://synapseprotocol.com",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Synapse",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/13910/synapse-dapp-defi-ethereum-logo-166x166_0754252bed6585140d65e41e6c6882a7.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    }
+  ],
+  "timestamp": "2022-04-20 12:33:53",
+  "protocol": "TIP-001",
+  "name": "Harmony",
+  "url": "https://gitee.com/dapplist/dappcom/raw/master/dapp-list/Harmony.json",
+  "logo_uri": "https://i.postimg.cc/s2qTW4BK/harmony-1x.png",
+  "version": "1.0"
+}

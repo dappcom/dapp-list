@@ -1,0 +1,471 @@
+{
+  "dapp_list": [
+    {
+      "url": "https://starmon.io/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "StarMon",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/8993/starmon-dapp-games-bsc-logo-166x166_59838b1f950e9b4e13435d790bb43548.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://www.herocat.io",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "HEROCATGAMEFI",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/9969/herocatgamefi-dapp-games-bsc-logo-166x166_d241a78dd9113130ebef388a152cd6ca.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://www.elementx.games/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "ElementX",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/14076/elementx-dapp-games-bsc-logo-166x166_f4347de89bf02ef06f7002cbaa8f1bfd.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://www.nftmake.com/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "NFTMAKE",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/10600/nftmake-dapp-games-bsc-logo-166x166_5397858494c2f578b1043336bc2477c7.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://duskbreakers.gg/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "DuskBreakers",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/11867/duskbreakers-dapp-collectibles-ethereum-logo-166x166_e05fcf0fe571916b0268b42c9f39a498.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://thecryptoyou.io",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "The Crypto You",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/12136/thecryptoyou-dapp-games-bsc-logo-166x166_58dc84e382b2a02812320c9fc312a0ff.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://squid-nft.io/ ",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Squid NFT World",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/12779/squidnftworld-dapp-games-bsc-logo-166x166_309061617d47b8b91eeaea2ea5a804bf.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://game.binaryx.pro/#/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "BinaryX",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/8839/binaryx-dapp-games-bsc-logo-166x166_c06e385fc9cae067ffee21a45a935cee.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://zoogame.app",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "ZOO Crypto World",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/8017/zoocryptoworld-dapp-games-bsc-logo-166x166_d880760008b5cca604849af297f384f6.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://www.thetanarena.com/#home",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Thetan Arena",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/10219/thetanarena-dapp-games-bsc-logo-166x166_6997be29ead175856bf630adc2454b60.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://dnaxcat.io/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "DNAxCAT",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/9002/dnaxcat-dapp-games-bsc-logo-166x166_8fbf6eb7d64220d0b5718ce5a1532425.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://www.kakanft.com",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "KAKA NFT WORLD",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/10229/kakanft-dapp-games-bsc-logo-166x166_bd0f26319f4e608b178474516bd1be7c.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "http://www.meta.auto/app/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "MetaverseMiner",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/10514/metaverseminer-dapp-games-bsc-logo-166x166_8778af921300aac0b6dd0c6ecf481413.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x03060C"
+    },
+    {
+      "url": "https://cryptobay.io/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "CryptoBay",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/8772/cryptobay-dapp-games-bsc-logo-166x166_a2626956e80f1b6825a11cb0341990c8.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://richassmurlocssocialclub.com/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Richass Murlocs",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/10403/richassmurlocsocialclub-dapp-collectibles-bsc-logo-166x166_5441703e63a8f7cf0f165bc6da8629c2.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://defina.finance/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Defina",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/10252/defina-dapp-games-bsc-logo-166x166_8e93659b65b86e927f887df25606483f.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://www.minesofdalarnia.com/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Mines of Dalarnia",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/10338/minesofdalarniaminingapescollection-dapp-collectibles-ethereum-logo-166x166_999ac1ea16ed191de01aeff441539fd7.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://www.playvalkyr.io/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Valkyrio",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/9291/valkyriogame-dapp-games-bsc-logo-166x166_0facd9cb28ec8e9cbf058555568224fd.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://wanakafarm.com/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Wanaka Farm",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/8954/wanakafarm-dapp-games-bsc-logo-166x166_006e0628c02bee4a31d9a881421a4657.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "network": "TRX"
+        },
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        },
+        {
+          "network": "SOL"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://battleracers.io/?r=dappradar10",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Battle Racers",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/1524/battle-racers-games-eth-logo-166x166_eed8949ec3fd35df4ec565f8339e5658.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0xffffff"
+    },
+    {
+      "url": "https://www.piratesking.io/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "PiratesKing",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/13758/piratesking-dapp-games-bsc-logo-166x166_938cf986b817df76ccc9c452199b7f9b.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://farmersworld.io/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Farmers World",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/8430/farmersworld-dapp-games-wax-logo-166x166_52d0d3b38e00b215ecd58e8a2c1eb4c0.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "network": "WAX"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://alienworlds.io/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Alien Worlds",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/5314/alienworlds-dapp-games-wax-logo-166x166_15c50909678e70f765b11dda14fc5e1e.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "network": "WAX"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://www.cybercat.world/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "CyberCat",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/13126/cybercat-dapp-games-bsc-logo-166x166_cace743e502ff1dee1a4dfcc55585992.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://www.wizardium.io/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Wizardium",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/10291/wizardium-dapp-games-bsc-logo-166x166_e08499ded1d17d1d5f29fede4106d9c7.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    }
+  ],
+  "timestamp": "2022-01-23 20:37:00",
+  "protocol": "TIP-001",
+  "name": "GameFi",
+  "logo_uri": "https://i.postimg.cc/Y0y8zN0d/gamefi-1x.png",
+  "version": "1.0"
+}
