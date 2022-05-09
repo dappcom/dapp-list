@@ -1,17 +1,17 @@
-const collection1 = require('../dapplist/AllNFT.json')
-const collection2 = require('../dapplist/AVAX.json')
-const collection3 = require('../dapplist/EthereumdApps.json')
-const collection4 = require('../dapplist/EverythingBSC.json')
-const collection5 = require('../dapplist/Fantom.json')
-const collection6 = require('../dapplist/GameFi.json')
-const collection7 = require('../dapplist/Harmony.json')
-const collection8 = require('../dapplist/HECO.json')
-const collection9 = require('../dapplist/Klaytn.json')
-const collection10 = require('../dapplist/OKXChain.json')
-const collection11 = require('../dapplist/Optimistic.json')
-const collection12 = require('../dapplist/Polygon.json')
-const collection13 = require('../dapplist/Solana.json')
-const collection14 = require('../dapplist/TRON.json')
+const collection1 = require('../../dapps/AllNFT.json')
+const collection2 = require('../../dapps/AVAX.json')
+const collection3 = require('../../dapps/EthereumdApps.json')
+const collection4 = require('../../dapps/EverythingBSC.json')
+const collection5 = require('../../dapps/Fantom.json')
+const collection6 = require('../../dapps/GameFi.json')
+const collection7 = require('../../dapps/Harmony.json')
+const collection8 = require('../../dapps/HECO.json')
+const collection9 = require('../../dapps/Klaytn.json')
+const collection10 = require('../../dapps/OKXChain.json')
+const collection11 = require('../../dapps/Optimistic.json')
+const collection12 = require('../../dapps/Polygon.json')
+const collection13 = require('../../dapps/Solana.json')
+const collection14 = require('../../dapps/TRON.json')
 
 const dappCollection = [
   collection1,
@@ -29,9 +29,26 @@ const dappCollection = [
   collection13,
   collection14,
 ]
+const dappCollectionUrl = [
+  'https://gitee.com/dapplist/dappcom/raw/master/dapp-list/AllNFT.json',
+  'https://gitee.com/dapplist/dappcom/raw/master/dapp-list/AVAX.json',
+  'https://gitee.com/dapplist/dappcom/raw/master/dapp-list/EthereumdApps.json',
+  'https://gitee.com/dapplist/dappcom/raw/master/dapp-list/EverythingBSC.json',
+  'https://gitee.com/dapplist/dappcom/raw/master/dapp-list/Fantom.json',
+  'https://gitee.com/dapplist/dappcom/raw/master/dapp-list/GameFi.json',
+  'https://gitee.com/dapplist/dappcom/raw/master/dapp-list/Harmony.json',
+  'https://gitee.com/dapplist/dappcom/raw/master/dapp-list/HECO.json',
+  'https://gitee.com/dapplist/dappcom/raw/master/dapp-list/Klaytn.json',
+  'https://gitee.com/dapplist/dappcom/raw/master/dapp-list/OKXChain.json',
+  'https://gitee.com/dapplist/dappcom/raw/master/dapp-list/Optimistic.json',
+  'https://gitee.com/dapplist/dappcom/raw/master/dapp-list/Polygon.json',
+  'https://gitee.com/dapplist/dappcom/raw/master/dapp-list/Solana.json',
+  'https://gitee.com/dapplist/dappcom/raw/master/dapp-list/TRON.json',
+]
 
 dappCollection.forEach((item, index) => {
   item.id = index
+  item.url = dappCollectionUrl[index]
 })
 
 export default dappCollection
