@@ -859,6 +859,24 @@
         }
       ],
       "navi_color": "0x000000"
+    },
+    {
+      "url": "https://www.lulu.market/home",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xFFFFFF",
+      "title": "LULU MARKETS",
+      "icon_url": "https://www.lulu.market/static/ui/topbar/logo.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x000000"
     }
   ],
   "timestamp": "2022-01-23 20:37:00",
