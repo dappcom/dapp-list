@@ -36,7 +36,7 @@ export default {
         // 调用 vuei18n
         divNode.innerHTML = vNode.context.$t('copySuccess')
         divNode.style.position = 'fixed'
-        divNode.style.zIndex = '10000'
+        divNode.style.zIndex = '9997'
         divNode.style.width = '234px'
         divNode.style.height = '71px'
         divNode.style.textAlign = 'center'

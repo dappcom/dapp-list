@@ -38,13 +38,16 @@ export default {
           icon: require('../assets/home/app.png'),
           title: this.$t('tpApp'),
           desc: this.$t('tpAppDesc'),
-          url: 'https://chrome.google.com/webstore/detail/tokenpocket/mfgccjchihfkkindfppnaooecgfneiii?hl=zh-CN',
+          url: 'https://tokenpocket.pro/zh/download/app',
         },
         {
           icon: require('../assets/home/extension.png'),
           title: this.$t('tpExtension'),
           desc: this.$t('tpExtensionDesc'),
-          url: 'https://tokenpocket.pro/zh/download/app',
+          url:
+            this.$i18n.locale === 'en'
+              ? 'https://chrome.google.com/webstore/detail/tokenpocket/mfgccjchihfkkindfppnaooecgfneiii?hl=en'
+              : 'https://chrome.google.com/webstore/detail/tokenpocket/mfgccjchihfkkindfppnaooecgfneiii?hl=zh-CN',
         },
       ]
     },
