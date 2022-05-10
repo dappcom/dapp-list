@@ -894,7 +894,7 @@
       "protocol": "TIP-001",
       "title_color": "0xFFFFFF",
       "title": "LULU MARKETS",
-      "icon_url": "https://www.lulu.market/static/ui/topbar/logo.png",
+      "icon_url": "https://www.lulu.market/whitepaper/logo.png",
       "protocol_version": "1.0",
       "chain_list": [
         {
