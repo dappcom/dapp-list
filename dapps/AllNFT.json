@@ -66,18 +66,42 @@
       "navi_color": "0x000000"
     },
     {
-      "url": "https://webapp.momoland.io/momo/#/",
+      "url": "https://tofunft.com/",
       "full_screen": 0,
       "source": 1,
       "hori_vert": 0,
       "protocol": "TIP-001",
       "title_color": "0xffffff",
-      "title": "MOBOX Platform",
-      "icon_url": "https://dashboard-assets.dappradar.com/document/6249/momonftfarmer-dapp-games-bsc-logo-166x166_a5766503c5711a16ec0f2d5b34d05a70.png",
+      "title": "tofuNFT",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/6253/tofunft-dapp-marketplaces-bsc-logo-166x166_c7426742210207a2213a5f97ddcbda46.png",
       "protocol_version": "1.0",
       "chain_list": [
         {
           "chain_id": "56",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "128",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "66",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "8217",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "43114",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "10",
           "network": "ethereum"
         }
       ],
@@ -114,6 +138,36 @@
       "chain_list": [
         {
           "chain_id": "1",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://www.nftscan.com/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "NFTScan",
+      "icon_url": "https://logo.nftscan.com/logo/nftscan.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "1284",
           "network": "ethereum"
         }
       ],
@@ -204,6 +258,24 @@
       "chain_list": [
         {
           "chain_id": "1",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://webapp.momoland.io/momo/#/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "MOBOX Platform",
+      "icon_url": "https://dashboard-assets.dappradar.com/document/6249/momonftfarmer-dapp-games-bsc-logo-166x166_a5766503c5711a16ec0f2d5b34d05a70.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "56",
           "network": "ethereum"
         }
       ],
@@ -377,48 +449,7 @@
       ],
       "navi_color": "0x2890fe"
     },
-    {
-      "url": "https://tofunft.com/",
-      "full_screen": 0,
-      "source": 1,
-      "hori_vert": 0,
-      "protocol": "TIP-001",
-      "title_color": "0xffffff",
-      "title": "tofuNFT",
-      "icon_url": "https://dashboard-assets.dappradar.com/document/6253/tofunft-dapp-marketplaces-bsc-logo-166x166_c7426742210207a2213a5f97ddcbda46.png",
-      "protocol_version": "1.0",
-      "chain_list": [
-        {
-          "chain_id": "56",
-          "network": "ethereum"
-        },
-        {
-          "chain_id": "128",
-          "network": "ethereum"
-        },
-        {
-          "chain_id": "137",
-          "network": "ethereum"
-        },
-        {
-          "chain_id": "66",
-          "network": "ethereum"
-        },
-        {
-          "chain_id": "8217",
-          "network": "ethereum"
-        },
-        {
-          "chain_id": "43114",
-          "network": "ethereum"
-        },
-        {
-          "chain_id": "10",
-          "network": "ethereum"
-        }
-      ],
-      "navi_color": "0x2890fe"
-    },
+
     {
       "url": "https://solsea.io/",
       "full_screen": 0,
