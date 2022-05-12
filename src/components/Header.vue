@@ -51,7 +51,12 @@
         {{ $t('language') }}
       </div>
     </div>
-    <img src="../assets/home/menu.png" class="menu" @click="onMenu" />
+    <img
+      src="../assets/home/menu.png"
+      ref="menu"
+      class="menu"
+      @click="onMenu"
+    />
   </div>
 </template>
 
@@ -92,7 +97,9 @@ export default {
       }
     },
     onMenu() {
-      this.$emit('openMenu')
+      this.top = this.$refs.menu.getBoundingClientRect().top + 22 + 30
+      console.log('top', this.top)
+      this.$emit('openMenu', this.top)
     },
     goHome() {
       if (this.isDetail) {

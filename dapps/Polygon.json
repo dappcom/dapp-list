@@ -289,6 +289,89 @@
       "navi_color": "0xFFFFFF"
     },
     {
+      "url": "https://ave.ai/token",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Ave",
+      "icon_url": "https://avesp.xyz/oss/logo/ave.ai.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "10",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "78",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "128",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "250",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "321",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "1280",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "1284",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "42161",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "43113",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "71394",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "888888",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "1666600000",
+          "network": "ethereum"
+        },
+        {
+          "network": "SOL"
+        },
+        {
+          "network": "TRX"
+        },
+        {
+          "network": "ATOM"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
       "url": "https://synapseprotocol.com",
       "full_screen": 0,
       "source": 1,

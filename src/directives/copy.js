@@ -22,10 +22,10 @@ export default {
       const result = document.execCommand('Copy')
       if (result) {
         // 判断页面上是否有创建的 copy-wrap div 有则移除
-        const copyWrap = document.querySelector('#copy-wrap')
-        if (copyWrap) {
-          document.body.removeChild(copyWrap)
-        }
+        // const copyWrap = document.querySelector('#copy-wrap')
+        // if (copyWrap) {
+        //   document.body.removeChild(copyWrap)
+        // }
 
         console.log('复制成功') // 可根据项目UI仔细设计
         // 增加复制成功提示
@@ -71,7 +71,8 @@ export default {
         document.body.appendChild(divNode)
         // 延迟1000毫秒后移除
         let timer = setTimeout(() => {
-          divNode.style.opacity = '0'
+          document.body.removeChild(divNode)
+          // divNode.style.opacity = '0'
           // divNode.style.display = 'none'
         }, 1000)
       }

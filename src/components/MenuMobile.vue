@@ -1,5 +1,5 @@
 <template>
-  <div class="menu-mobile" @click="$emit('close')">
+  <div class="menu-mobile" :style="{height: `calc(100vh - ${menuTop}px)`, top: menuTop+'px'}" @click="$emit('close')">
     <div class="menu-content">
       <div
         class="menu-item"
@@ -44,6 +44,11 @@
 
 <script>
 export default {
+  props: {
+    menuTop: {
+      type: Number,
+    },
+  },
   data() {
     return {
       isChildBox: false,
@@ -55,7 +60,7 @@ export default {
         {
           icon: require('../assets/home/github.png'),
           title: 'Github',
-          url: 'http',
+          url: 'https://github.com/dappcom/dapp-list',
         },
         {
           title: this.$t('download'),

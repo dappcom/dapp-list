@@ -136,7 +136,7 @@
         <NoMatch v-else />
       </div>
     </div>
-    <MenuMobile v-if="isMenuMobile" />
+    <MenuMobile v-if="isMenuMobile" :menuTop="menuTop" />
   </div>
 </template>
 
@@ -160,6 +160,7 @@ export default {
       isMenuMobile: false,
       id: 0,
       dappObj: {},
+      menuTop: 0,
     }
   },
   computed: {
@@ -184,11 +185,13 @@ export default {
       return chainNameMap
     },
   },
+
   created() {
     // console.log('this.$route', this.$route)
     this.id = this.$route.query.id
     this.dappObj = dappCollection[this.$route.query.id]
     this.dappList = this.dappObj.dapp_list
+    document.body.style.overflow = 'auto'
   },
   methods: {
     getImg(index) {
@@ -211,7 +214,8 @@ export default {
     onReset() {
       this.dappList = this.dappObj.dapp_list
     },
-    onMenu() {
+    onMenu(top) {
+      this.menuTop = top
       this.isMenuMobile = !this.isMenuMobile
       if (this.isMenuMobile) {
         document.body.style.overflow = 'hidden'

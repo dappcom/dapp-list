@@ -65,6 +65,7 @@
       v-if="isMenuMobile"
       @showMenuMobile="onClick"
       @close="closeMenuMobile"
+      :menuTop="menuTop"
     />
   </div>
 </template>
@@ -97,6 +98,7 @@ export default {
       isModal: false,
       isMenuMobile: false,
       dappCollection: [],
+      menuTop: 0
     }
   },
   computed: {
@@ -117,6 +119,7 @@ export default {
     console.log('dapplist1', dappCollection)
     this.dappCollection = dappCollection
     this.getDappJson()
+    document.body.style.overflow = 'auto'
   },
   methods: {
     async getDappJson() {
@@ -150,7 +153,8 @@ export default {
     onReset() {
       this.dappCollection = dappCollection
     },
-    onMenu() {
+    onMenu(top) {
+      this.menuTop = top
       this.isMenuMobile = !this.isMenuMobile
       if (this.isMenuMobile) {
         document.body.style.overflow = 'hidden'
