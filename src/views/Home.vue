@@ -118,7 +118,7 @@ export default {
   created() {
     console.log('dapplist1', dappCollection)
     this.dappCollection = dappCollection
-    this.getDappJson()
+    // this.getDappJson()
     document.body.style.overflow = 'auto'
   },
   methods: {
