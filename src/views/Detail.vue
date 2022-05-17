@@ -16,13 +16,14 @@
               v-if="item.desc"
               src="../assets/detail/copy-w.png"
               v-copy="item.url"
+              @click="onCopy"
             />
           </div>
           <div class="text desc">
             {{ item.desc }}
           </div>
         </div>
-        <div class="addbtn" @click="addDappList" v-copy="dappObj.url">
+        <div class="addbtn" @click="onCopy" v-copy="dappObj.url">
           {{ $t('addWallet') }}
         </div>
         <div class="text course" @click="goCourse">{{ $t('course') }}</div>
@@ -128,7 +129,7 @@
               <a :href="item.url" class="text title3 dapp-url text-ellipsis">
                 {{ item.url }}
               </a>
-              <div class="copy" v-copy="item.url"></div>
+              <div class="copy" @click="onDappCopy(item.url)" v-copy="item.url"></div>
             </div>
             <div :class="{ line: index !== dappList.length - 1 }"></div>
           </div>
@@ -194,6 +195,12 @@ export default {
     document.body.style.overflow = 'auto'
   },
   methods: {
+    onCopy(){
+      window._hmt.push(['_copyUrlEvent', 'click', this.dappObj.url])
+    },
+    onDappCopy(url){
+      window._hmt.push(['_copyDappUrlEvent', 'click', url])
+    },
     getImg(index) {
       // console.log('done', this.$refs)
       if (this.$refs.dappimg[index]) {

@@ -98,7 +98,7 @@ export default {
       isModal: false,
       isMenuMobile: false,
       dappCollection: [],
-      menuTop: 0
+      menuTop: 0,
     }
   },
   computed: {
@@ -132,7 +132,7 @@ export default {
     onClick(index) {
       if (index === 0) {
         window.open('https://github.com/dappcom/dapp-list')
-      } else { 
+      } else {
         this.isModal = true
         this.isMenuMobile = false
         document.body.style.overflow = 'auto'

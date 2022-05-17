@@ -2,7 +2,7 @@
   <div
     class="dapp-collection"
     :class="{ isDetail: isDetail }"
-    @click="$router.push(`/detail?id=${dappObj.id}`)"
+    @click="goDetail"
   >
     <img
       class="dapp-img"
@@ -46,6 +46,10 @@ export default {
     },
   },
   methods: {
+    goDetail() {
+      this.$router.push(`/detail?id=${this.dappObj.id}`)
+      window._hmt.push(['_collectionEvent', 'click', this.dappObj.name])
+    },
     getImg() {
       // console.log('done', this.$refs)
       if (this.$refs.dappimg) {
