@@ -1,4 +1,4 @@
-# trade-competition
+
 
 ## Project setup
 
@@ -16,6 +16,14 @@ npm run serve
 
 ```
 npm run build
+```
+
+### Deploy to github
+
+```
+git add -f dist
+git commit -m 'some commit'
+git subtree push --prefix dist origin gh-pages
 ```
 
 ### Lints and fixes files
