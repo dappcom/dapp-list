@@ -4,6 +4,7 @@ import i18n from './i18n/index'
 import router from './router'
 import store from './store'
 import './style/index.scss'
+// _hmt.push(['_trackEvent', 'onload', host + '-' + lang, status])
 
 Vue.config.productionTip = false
 
