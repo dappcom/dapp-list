@@ -147,6 +147,60 @@
       "navi_color": "0x000000"
     },
     {
+      "url": "https://batchsender.tokenpocket.pro",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "TP BatchSender",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1652838921196.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "10",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "65",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "128",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "250",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "1001",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "43114",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "1666600000",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0xffffff"
+    },
+    {
       "url": "https://lido.fi/",
       "full_screen": 0,
       "source": 1,
