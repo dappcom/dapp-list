@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "loadsh": "0.0.4",
     "lodash": "^4.17.21",
     "tp-js-sdk": "^3.7.1",
     "vue": "^2.6.11",

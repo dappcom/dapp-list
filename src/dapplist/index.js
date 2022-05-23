@@ -12,6 +12,7 @@ const collection11 = require('../../dapps/Optimistic.json')
 const collection12 = require('../../dapps/Polygon.json')
 const collection13 = require('../../dapps/Solana.json')
 const collection14 = require('../../dapps/TRON.json')
+const collection15 = require('../../dapps/KCCMainnet.json')
 
 const dappCollection = [
   collection1,
@@ -28,6 +29,7 @@ const dappCollection = [
   collection12,
   collection13,
   collection14,
+  collection15,
 ]
 const dappCollectionUrl = [
   'https://gitee.com/dapplist/dappcom/raw/master/dapp-list/AllNFT.json',
@@ -44,6 +46,7 @@ const dappCollectionUrl = [
   'https://gitee.com/dapplist/dappcom/raw/master/dapp-list/Polygon.json',
   'https://gitee.com/dapplist/dappcom/raw/master/dapp-list/Solana.json',
   'https://gitee.com/dapplist/dappcom/raw/master/dapp-list/TRON.json',
+  'https://gitee.com/dapplist/dappcom/raw/master/dapp-list/KCCMainnet.json',
 ]
 
 dappCollection.forEach((item, index) => {

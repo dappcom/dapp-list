@@ -41,9 +41,26 @@
         </div>
       </div>
       <div class="right-content flex-1">
-        <div class="seaech-sticky">
-          <SearchWrap @getHomeVal="getVal" @reset="onReset" />
-          <!-- <SearchDropDown /> -->
+        <div class="seaech-sticky" ref="seaechSticky">
+          <SearchWrap
+            @getHomeVal="getVal"
+            @reset="onReset"
+            @oninput="onInput"
+            @focus="onFocus"
+            :searchVal="searchVal"
+          />
+          <div class="searchDropDown" ref="searchDropDown">
+            <SearchDropDown
+              v-show="(isFocus && historyList.length) || (searchVal && isEnd)"
+              :searchVal="searchVal"
+              :isFocus="isFocus"
+              :historyList="historyList"
+              @getData="getData"
+              @getHomeVal="getVal"
+              @checkAllDappList="getCheckAllDappList"
+              :height="height + 'px'"
+            />
+          </div>
         </div>
         <div
           class="dapp-collection-wrap d-flex jc-between flex-wrap"
@@ -53,14 +70,14 @@
             v-for="(item, index) in dappCollection"
             :key="index"
             :dappObj="item"
+            :enterObj="enterObj"
           />
-          <!-- 完美解决flex布局中space-between和space-evenly最后一行不居左对齐问题,2是每行的个数 -->
           <div style="width: 186px; height: 0"></div>
         </div>
         <NoMatch v-else />
       </div>
     </div>
-    <Modal v-if="isModal" @close="onClose" />
+    <Modal v-if="isModal" @closeModal="onClose" />
     <MenuMobile
       v-if="isMenuMobile"
       @showMenuMobile="onClick"
@@ -76,11 +93,11 @@ import Header from '../components/Header.vue'
 import MenuMobile from '../components/MenuMobile.vue'
 import Modal from '../components/Modal.vue'
 import NoMatch from '../components/NoMatch.vue'
-// import SearchDropDown from '../components/SearchDropDown.vue'
+import SearchDropDown from '../components/SearchDropDown.vue'
 import SearchWrap from '../components/SearchWrap.vue'
 
 import dappCollection from '../dapplist'
-import { FuzzySearch } from '../utils'
+import { FuzzySearch, FuzzySearchDappList } from '../utils'
 
 export default {
   name: 'Home',
@@ -91,13 +108,19 @@ export default {
     Modal,
     MenuMobile,
     NoMatch,
-    // SearchDropDown,
+    SearchDropDown,
   },
   data() {
     return {
       isModal: false,
       isMenuMobile: false,
+      isFocus: false,
+      isEnd: true,
+      enterObj: {},
+      historyList: [],
       dappCollection: [],
+      searchVal: '',
+      height: 0,
       menuTop: 0,
     }
   },
@@ -118,16 +141,92 @@ export default {
   created() {
     console.log('dapplist1', dappCollection)
     this.dappCollection = dappCollection
-    // this.getDappJson()
     document.body.style.overflow = 'auto'
-  },
-  methods: {
-    async getDappJson() {
-      const fetchData = await fetch(
-        'https://tp-statics.tokenpocket.pro/dapp-list/EthereumdApps.json'
+
+    // console.log('---', JSON.parse(window.localStorage.getItem('enterObj')))
+    let enterObj = JSON.parse(window.localStorage.getItem('enterObj'))
+    if (enterObj) {
+      this.getVal(enterObj)
+      this.searchVal = enterObj.val
+      if (this.enterObj.collection) {
+        this.dappCollection = FuzzySearchDappList(
+          dappCollection,
+          this.searchVal
+        )
+      }
+      window.localStorage.removeItem('enterObj')
+    }
+    this.historyList =
+      JSON.parse(window.localStorage.getItem('historyList')) || []
+    if (this.historyList.length > 10) {
+      this.historyList = this.historyList.slice(0, 10)
+      window.localStorage.setItem(
+        'historyList',
+        JSON.stringify(this.historyList)
       )
-      const dappJson = await fetchData.json()
-      // console.log('dappJson', dappJson)
+    }
+  },
+  mounted() {
+    document.addEventListener('click', this.onOutside)
+  },
+  beforeDestroy() {
+    document.removeEventListener('click', this.onOutside)
+  },
+
+  methods: {
+    getData(item) {
+      this.dappCollection = this.dappCollection.filter((d) => {
+        return d.name === item.name
+      })
+      this.searchVal = item.name
+      this.isEnd = false
+      this.isFocus = false
+    },
+    onSearchDropDown() {
+      this.isFocus = true
+      console.log('onSearchDropDown', this.isFocus)
+    },
+    getSearchDropDownTop() {
+      const searchDropDown = this.$refs.searchDropDown
+      // console.log('height', searchDropDown.getBoundingClientRect().top)
+      this.height = searchDropDown.getBoundingClientRect().top
+    },
+    onOutside(e) {
+      const searchDropDown = this.$refs.searchDropDown
+      const seaechSticky = this.$refs.seaechSticky
+      if (
+        searchDropDown &&
+        seaechSticky &&
+        !searchDropDown.contains(e.target) &&
+        !seaechSticky.contains(e.target)
+      ) {
+        const contentWrap = document.querySelector('.search-drop-down')
+        const contentWrap2 = document.querySelector('.seaech-sticky')
+        if (
+          contentWrap &&
+          contentWrap2 &&
+          !contentWrap.contains(e.target) &&
+          !contentWrap2.contains(e.target)
+        ) {
+          // console.log(111)
+          this.isFocus = false
+        }
+      }
+      // this.isFocus = false
+      // console.log('onOutside', this.isFocus)
+    },
+    onInput(val) {
+      // console.log('val', val)
+      this.searchVal = val
+      this.isEnd = true
+    },
+    onFocus(flag) {
+      // console.log('flag', this.$refs)
+      // this.$refs.homeChild.getSearch()
+      this.isFocus = flag
+      this.historyList =
+        JSON.parse(window.localStorage.getItem('historyList')) || []
+      // this.getSearchDropDownTop()
     },
     onClick(index) {
       if (index === 0) {
@@ -139,19 +238,38 @@ export default {
       }
     },
     onClose() {
+      console.log(111)
       this.isModal = false
     },
     closeMenuMobile() {
       this.isMenuMobile = false
       document.body.style.overflow = 'auto'
     },
-    getVal(val) {
-      console.log('home-val', val)
-      this.dappCollection = FuzzySearch(dappCollection, val)
+    getVal(data) {
+      // console.log('home-val', val)
+      this.dappCollection = FuzzySearch(dappCollection, data.val)
+      if (data.checkAllDapps) {
+        this.dappCollection = this.dappCollection.filter((d) => {
+          return d.searchDapps.length > 0
+        })
+      }
+      this.isEnd = false
+      this.isFocus = false
+      this.searchVal = data.val
+      this.enterObj = data
       console.log('resdapp', this.dappCollection)
     },
+
+    getCheckAllDappList(data) {
+      this.dappCollection = data.dappList
+      this.isEnd = false
+      this.isFocus = false
+      this.enterObj = data.enterObj
+    },
     onReset() {
+      this.enterObj = { isEnter: false, val: '' }
       this.dappCollection = dappCollection
+      this.isEnd = true
     },
     onMenu(top) {
       this.menuTop = top
@@ -366,7 +484,8 @@ export default {
         padding: 0 16px;
         .seaech-sticky {
           position: static;
-          top: 95px;
+          position: relative;
+          top: auto;
           z-index: 9996;
           background: #f5f9ff;
           padding: 25px 0 20px;

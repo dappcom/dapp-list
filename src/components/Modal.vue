@@ -23,7 +23,7 @@
       <img
         class="delete-g"
         src="../assets/home/delete-g.png"
-        @click="$emit('close')"
+        @click="$emit('closeModal')"
       />
     </div>
   </div>
@@ -142,6 +142,7 @@ export default {
 @media screen and(max-width:767px) {
   .modal {
     &-content {
+      position: relative;
       width: 94vw;
       padding: 20px 38px 28px 32px;
       border-radius: 15px;
@@ -151,12 +152,13 @@ export default {
         font-size: 16px;
       }
       .product-item {
+        position: relative;
         width: 100%;
         height: 39px;
         justify-content: center;
         border-radius: 10px;
         background: #fff;
-        border: 1px solid #d7d7d7;
+        border: none;
 
         .icon-wrap {
           margin: 0;
@@ -177,6 +179,18 @@ export default {
             display: none;
           }
         }
+      }
+      .product-item:after {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        top: -50%;
+        right: -50%;
+        bottom: -50%;
+        left: -50%;
+        border: 1px solid #d7d7d7;
+        transform: scale(0.5);
+        border-radius: 20px;
       }
       :nth-child(3) {
         margin-top: 15px;

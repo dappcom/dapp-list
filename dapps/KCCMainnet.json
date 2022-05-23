@@ -1,0 +1,215 @@
+{
+  "dapp_list": [
+    {
+      "url": "https://swap.transit.finance",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Tansit",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1635253854433.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "321",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0xffffff"
+    },
+    {
+      "url": "https://app.mojitoswap.finance",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "MojitoSwap",
+      "icon_url": "https://pbs.twimg.com/profile_images/1431185996847091718/Y--WYD4r_400x400.jpg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "321",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0xffffff"
+    },
+    {
+      "url": "https://app.kuswap.finance",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "KuSwap",
+      "icon_url": "https://pbs.twimg.com/profile_images/1409198224527683586/9g9ykRCE_400x400.jpg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "321",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0xffffff"
+    },
+    {
+      "url": "https://www.playkardia.com",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "PlayKardia",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1650526936876.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "321",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0xffffff"
+    },
+    {
+      "url": "https://koffeeswap.exchange",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "KoffeeSwap",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1648639662510.jpeg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "321",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0xffffff"
+    },
+    {
+      "url": "https://www.pencildao.com",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Pencil DAO",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1648638194356.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "321",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0xffffff"
+    },
+    {
+      "url": "https://ku.kafe.finance",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Kukafe finance",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1648638096341.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "321",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0xffffff"
+    },
+    {
+      "url": "https://kukitty.finance",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "KuKitty",
+      "icon_url": "https://media.discordapp.net/attachments/936308129979854878/936308188620398622/KuKitty_Kit-Coin_Logo.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "321",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0xffffff"
+    },
+    {
+      "url": "https://killswitch.finance",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "KillSwitch",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1648637796562.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "321",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0xffffff"
+    },
+    {
+      "url": "https://ksfswap.finance",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "KsfSwap Finance",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1648637710921.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "321",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0xffffff"
+    },
+    {
+      "url": "https://paprprintr.finance",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Paprprintr.finance",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1648637539742.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "321",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0xffffff"
+    }
+  ],
+  "timestamp": "2022-05-23 12:33:53",
+  "protocol": "TIP-001",
+  "name": "KCC Mainnet",
+  "logo_uri": "https://storageapi.fleek.co/23f83764-3d4b-43a7-b0f7-24e1d47e1d03-bucket/dapp-collection-logo/kcc.svg",
+  "version": "1.0"
+}

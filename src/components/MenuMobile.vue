@@ -1,5 +1,9 @@
 <template>
-  <div class="menu-mobile" :style="{height: `calc(100vh - ${menuTop}px)`, top: menuTop+'px'}" @click="$emit('close')">
+  <div
+    class="menu-mobile"
+    :style="{ height: `calc(100vh - ${menuTop}px)`, top: menuTop + 'px' }"
+    @click="$emit('close')"
+  >
     <div class="menu-content">
       <div
         class="menu-item"
@@ -12,17 +16,17 @@
           <div>{{ navItem.title }}</div>
           <img
             class="arrow-down"
-            :class="{ active: isChildBox }"
+            :class="{ active: navItem.isShow }"
             v-if="navItem.lang"
             src="../assets/home/arrow-down.png"
           />
         </div>
-        <div class="lang-list-box" v-if="isChildBox" @click="onChangeLang">
+        <div class="lang-list-box" v-if="navItem.isShow">
           <div
             class="lang-list"
             v-for="(langItem, index) in navItem.children"
             :key="index"
-            :data-lang="langItem.lang"
+            @click="onChangeLang(langItem.lang)"
           >
             <div class="text title">
               {{ langItem.langText }}
@@ -51,12 +55,7 @@ export default {
   },
   data() {
     return {
-      isChildBox: false,
-    }
-  },
-  computed: {
-    mobileDropDownList() {
-      return [
+      mobileDropDownList: [
         {
           icon: require('../assets/home/github.png'),
           title: 'Github',
@@ -75,46 +74,29 @@ export default {
         {
           title: this.$t('langText'),
           lang: true,
+          isShow: false,
           children: [
             { langText: '简体', lang: 'zh' },
             { langText: 'English', lang: 'en' },
           ],
         },
-      ]
-    },
-  },
-  mounted() {
-    // 监听，除了点击自己，点击其他地方将自身隐藏
-    // document.addEventListener('click', this.onOutside)
+      ],
+    }
   },
   methods: {
-    onOutside(e) {
-      const languageBtn = this.$refs.languageBtn
-      if (!languageBtn.contains(e.target)) {
-        const contentWrap = document.querySelector('.menu-content')
-        if (contentWrap) {
-          if (!contentWrap.contains(e.target)) {
-            this.isShowLanguageBox = false
-            this.isShowLanguageListBox = false
-          }
-        }
-      }
-    },
     onNavItem(navItem) {
       if (navItem.url) {
         window.open(navItem.url)
       } else if (navItem.children) {
-        this.isChildBox = !this.isChildBox
+        navItem.isShow = !navItem.isShow
       } else if (navItem.title === 'Download') {
         this.$emit('showMenuMobile')
       }
     },
-    onChangeLang() {
-      if (this.$i18n.locale === 'en') {
-        this.$i18n.locale = 'zh'
-      } else {
-        this.$i18n.locale = 'en'
-      }
+    onChangeLang(lang) {
+      this.$i18n.locale = lang
+      window.localStorage.setItem('locale', this.$i18n.locale)
+      this.$emit('close')
     },
     openUrl(url, index) {
       if (index === 1) {
