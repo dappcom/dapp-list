@@ -98,7 +98,7 @@ export default {
     },
     onMenu() {
       this.top = this.$refs.menu.getBoundingClientRect().top + 22 + 30
-      console.log('top', this.top)
+      // console.log('top', this.top)
       this.$emit('openMenu', this.top)
     },
     goHome() {
@@ -123,6 +123,7 @@ export default {
       } else {
         this.$i18n.locale = 'en'
       }
+      window.localStorage.setItem('locale', this.$i18n.locale)
     },
   },
 }
@@ -166,7 +167,7 @@ export default {
           position: absolute;
           z-index: 0;
           top: -22px;
-          left: 80px;
+          left: 65px;
         }
         .triangle {
           fill: #fff;
@@ -261,6 +262,9 @@ export default {
       font-family: PingFangSC, PingFangSC-Medium;
       font-weight: 500;
       cursor: pointer;
+    }
+    .language:hover {
+      color: #2761e7;
     }
   }
   .menu {

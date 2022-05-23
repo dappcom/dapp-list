@@ -71,73 +71,50 @@
             <span class="text title title3"> {{ $t('link') }} </span>
           </div>
         </div>
-        <div class="list-content" v-if="dappList.length">
-          <div class="dapp-item" v-for="(item, index) in dappList" :key="index">
-            <div class="item-wrap d-flex ai-center">
-              <div class="text title1 order">{{ index + 1 }}</div>
-              <div class="message title2 d-flex ai-center">
-                <img :src="item.icon_url" ref="dappimg" @load="getImg(index)" />
-                <div class="dapp">
-                  <div class="text dapp-name text-ellipsis">
-                    {{ item.title }}
-                  </div>
-                  <div
-                    class="text dapp-desc text-ellipsis"
-                    v-if="
-                      item.chain_list.length === 1 &&
-                      item.chain_list[0].chain_id
-                    "
-                  >
-                    {{ chainNameMap[item.chain_list[0].chain_id] }}
-                  </div>
-                  <div
-                    class="text dapp-desc text-ellipsis"
-                    v-if="
-                      item.chain_list.length === 1 &&
-                      !item.chain_list[0].chain_id
-                    "
-                  >
-                    {{ item.chain_list[0].network }}
-                  </div>
-                  <div
-                    class="text dapp-desc text-ellipsis"
-                    v-if="item.chain_list.length === 2"
-                  >
-                    {{ chainNameMap[item.chain_list[0].chain_id] }}
-                    {{ chainNameMap[item.chain_list[1].chain_id] }}
-                  </div>
-                  <!-- <div
-                    class="text dapp-desc text-ellipsis"
-                    v-if="
-                      item.chain_list.length === 2 &&
-                      item.chain_list[0].network === item.chain_list[1].network
-                    "
-                  >
-                    {{ item.chain_list[0].network }}
-                  </div> -->
-                  <div
-                    class="text dapp-desc text-ellipsis"
-                    v-if="
-                      item.chain_list.length > 2 || item.chain_list.length === 0
-                    "
-                  >
-                    <!-- {{ item.chain_list[0].network }} -->
-                    Multi-Chain
-                  </div>
-                </div>
-              </div>
-              <a :href="item.url" class="text title3 dapp-url text-ellipsis">
-                {{ item.url }}
-              </a>
-              <div class="copy" @click="onDappCopy(item.url)" v-copy="item.url"></div>
+        <div class="list-content" v-if="dappObj.dapp_list.length && !searchVal">
+          <DappItem
+            v-for="(item, index) in dappList"
+            :key="index"
+            :item="item"
+            :index="index"
+            :length="dappObj.dapp_list.length"
+            :enterObj="enterObj"
+          />
+        </div>
+        <div class="list-content" v-else-if="searchVal">
+          <template v-if="dappObj.searchDapps.length > 0">
+            <div v-if="$i18n.locale === 'zh'" class="text search-dapps">
+              #{{ searchVal }}{{ $t('relatedSearch') }}
             </div>
-            <div :class="{ line: index !== dappList.length - 1 }"></div>
+            <div v-else class="text search-dapps">
+              {{ $t('relatedSearch') }} #{{ searchVal }}
+            </div>
+          </template>
+          <DappItem
+            v-for="(item, index) in dappObj.searchDapps"
+            :key="item.title"
+            :item="item"
+            :index="index"
+            :length="dappObj.searchDapps.length"
+          />
+          <div
+            v-if="dappObj.otherDapps.length > 0"
+            class="text search-dapps other-dapps"
+          >
+            {{ $t('other') }} DApps
           </div>
+          <DappItem
+            v-for="(item, index) in dappObj.otherDapps"
+            :key="index"
+            :item="item"
+            :index="index"
+            :length="dappObj.otherDapps.length"
+          />
         </div>
         <NoMatch v-else />
       </div>
     </div>
-    <MenuMobile v-if="isMenuMobile" :menuTop="menuTop" />
+    <MenuMobile v-if="isMenuMobile" />
   </div>
 </template>
 
@@ -149,19 +126,29 @@ import DappCollection from '../components/DappCollection.vue'
 import SearchWrap from '../components/SearchWrap.vue'
 import MenuMobile from '../components/MenuMobile.vue'
 import NoMatch from '../components/NoMatch.vue'
+import DappItem from '../components/DappItem.vue'
 
 import dappCollection from '../dapplist'
 import { FuzzySearch } from '../utils'
 
 export default {
-  components: { Header, DappCollection, SearchWrap, MenuMobile, NoMatch },
+  components: {
+    Header,
+    DappCollection,
+    SearchWrap,
+    MenuMobile,
+    NoMatch,
+    DappItem,
+  },
   data() {
     return {
-      dappList: [],
       isMenuMobile: false,
+      searchVal: '',
       id: 0,
       dappObj: {},
-      menuTop: 0,
+      dappCollection: [],
+      dappList: [],
+      enterObj: {},
     }
   },
   computed: {
@@ -186,21 +173,44 @@ export default {
       return chainNameMap
     },
   },
-
   created() {
     // console.log('this.$route', this.$route)
-    this.id = this.$route.query.id
-    this.dappObj = dappCollection[this.$route.query.id]
-    this.dappList = this.dappObj.dapp_list
     document.body.style.overflow = 'auto'
+    this.id = this.$route.query.id
+    this.searchVal = this.$route.query.val
+    if (this.searchVal) {
+      this.dappCollection = FuzzySearch(dappCollection, this.searchVal)
+    } else {
+      this.dappCollection = dappCollection
+    }
+    this.dappCollection = this.dappCollection.filter((d) => d.id == this.id)
+    this.dappObj = this.dappCollection[0]
+    this.dappList = this.dappObj.dapp_list
   },
+
+  beforeRouteLeave(to, from, next) {
+    console.log('to', to)
+    console.log('from', from)
+    if (from.query.val) {
+      window.localStorage.setItem(
+        'enterObj',
+        JSON.stringify({
+          isEnter: true,
+          val: from.query.val,
+          collection: from.query.collection === 'true' ? true : false,
+        })
+      )
+    } else {
+      window.localStorage.removeItem('enterObj')
+    }
+    next()
+  },
+
   methods: {
-    onCopy(){
+    onCopy() {
       window._hmt.push(['_copyUrlEvent', 'click', this.dappObj.url])
     },
-    onDappCopy(url){
-      window._hmt.push(['_copyDappUrlEvent', 'click', url])
-    },
+
     getImg(index) {
       // console.log('done', this.$refs)
       if (this.$refs.dappimg[index]) {
@@ -214,15 +224,17 @@ export default {
         window.open(courseEnUrl)
       }
     },
-    getVal(val) {
-      console.log('detail-val', val)
-      this.dappList = FuzzySearch(this.dappList, val)
+    getVal(data) {
+      console.log('detail-val', data.val)
+      this.searchVal = ''
+      this.enterObj = data
+      this.dappList = FuzzySearch(this.dappList, data.val)
     },
     onReset() {
       this.dappList = this.dappObj.dapp_list
+      this.enterObj = { isEnter: false, val: '' }
     },
-    onMenu(top) {
-      this.menuTop = top
+    onMenu() {
       this.isMenuMobile = !this.isMenuMobile
       if (this.isMenuMobile) {
         document.body.style.overflow = 'hidden'
@@ -239,7 +251,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .detail {
   .main {
     width: 1200px;
@@ -362,58 +374,17 @@ export default {
       }
 
       .list-content {
-        .dapp-item {
-          .order {
-            font-size: 16px;
-            font-family: PingFangSC, PingFangSC-Medium;
-            font-weight: 500;
-            text-align: center;
-          }
-          .message {
-            img {
-              border-radius: 50%;
-              width: 44px;
-              height: 44px;
-              background-image: url('../assets/detail/default.png');
-              background-size: contain;
-            }
-            .dapp {
-              margin-left: 14px;
-              .dapp-name {
-                width: 142px;
-                font-size: 16px;
-                font-family: PingFangSC, PingFangSC-Medium;
-                font-weight: 500;
-              }
-              .dapp-desc {
-                width: 142px;
-                font-size: 14px;
-                color: #999999;
-              }
-            }
-          }
-          .dapp-url {
-            font-size: 16px;
-          }
-          .dapp-url:hover {
-            color: #2761e7;
-          }
-          .copy {
-            width: 15px;
-            height: 16px;
-            cursor: pointer;
-            background: url('../assets/detail/copy-g.png') no-repeat;
-            background-size: contain;
-          }
-          .copy:hover {
-            background: url('../assets/detail/copy-b.png') no-repeat;
-            background-size: contain;
-          }
-          .line {
-            margin: 24px 0;
-            height: 1px;
-            background: #d8d8d8;
-          }
+        background: none;
+        .search-dapps {
+          margin-bottom: 21px;
+          height: 20px;
+          font-size: 14px;
+          font-family: PingFangSC, PingFangSC-Regular;
+          color: #999999;
+          line-height: 20px;
+        }
+        .other-dapps {
+          margin-top: 24px;
         }
       }
     }
@@ -557,50 +528,9 @@ export default {
           }
         }
         .list-content {
-          .dapp-item {
-            .item-wrap {
-              padding: 0 16px;
-            }
-            .order {
-              font-size: 12px;
-            }
-            .message {
-              img {
-                width: 29px;
-                height: 29px;
-              }
-              .dapp {
-                margin-left: 6px;
-                .dapp-name {
-                  width: 65px;
-                  font-weight: 700;
-                  font-size: 11px;
-                }
-                .dapp-desc {
-                  margin-top: 3px;
-                  width: 65px;
-                  font-size: 11px;
-                }
-              }
-            }
-            .dapp-url {
-              flex: 1;
-              font-size: 11px;
-            }
-            .dapp-url:hover {
-              color: #333;
-            }
-            .copy {
-              margin: 0 10px;
-            }
-            .copy:hover {
-              background: url('../assets/detail/copy-g.png') no-repeat;
-              background-size: contain;
-            }
-            .line {
-              margin-left: 16px;
-              transform: scaleY(0.5);
-            }
+          background: none;
+          .search-dapps {
+            margin-left: 20px;
           }
         }
       }

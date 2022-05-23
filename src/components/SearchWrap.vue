@@ -10,21 +10,24 @@
       @focus="onFocus"
       @blur="onBlur"
       @keyup.enter="onEnter"
+      @input="onInput"
       ref="inputs"
     />
     <img
       v-if="inputVal"
       src="../assets/home/delete.png"
-      @click="
-        inputVal = ''
-        $refs.inputs.focus()
-      "
+      @click.stop="onDelete"
     />
   </div>
 </template>
 
 <script>
 export default {
+  props: {
+    searchVal: {
+      type: String,
+    },
+  },
   data() {
     return {
       isMobile: !!navigator.userAgent
@@ -45,22 +48,59 @@ export default {
       return this.$t('search')
     },
   },
+  watch: {
+    searchVal() {
+      this.inputVal = this.searchVal
+    },
+  },
+  created() {
+    this.inputVal = this.searchVal
+  },
   methods: {
+    onInput() {
+      this.$emit('oninput', this.inputVal)
+      if (!this.inputVal) {
+        this.$emit('reset')
+      }
+    },
     onFocus() {
       this.isFocus = true
+      this.$emit('focus', this.isFocus)
     },
     onBlur() {
       this.isFocus = false
+      // this.$emit('focus', this.isFocus)
       if (!this.inputVal) {
         this.$emit('reset')
       }
     },
     onEnter() {
       if (this.isDetail) {
-        this.$emit('getDetailVal', this.inputVal)
+        this.$emit('getDetailVal', { isEnter: true, val: this.inputVal })
       } else {
-        this.$emit('getHomeVal', this.inputVal)
+        this.$emit('getHomeVal', { isEnter: true, val: this.inputVal })
+        this.setHistory()
       }
+    },
+    onDelete() {
+      this.inputVal = ''
+      this.$refs.inputs.focus()
+      this.$emit('oninput', this.inputVal)
+    },
+    setHistory() {
+      let arr = []
+      if (!window.localStorage.getItem('historyList')) {
+        arr.push(this.inputVal)
+        console.log('arr', arr)
+      } else {
+        arr = JSON.parse(window.localStorage.getItem('historyList'))
+        if (!arr.includes(this.inputVal)) {
+          arr.unshift(this.inputVal)
+        } else {
+          arr.unshift(arr.splice(arr.indexOf(this.inputVal), 1)[0])
+        }
+      }
+      window.localStorage.setItem('historyList', JSON.stringify(arr))
     },
   },
 }

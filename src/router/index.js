@@ -23,6 +23,14 @@ const routes = [
 
 const router = new VueRouter({
   routes,
+  // scrollBehavior(to, from, savedPosition) {
+  //   return { top: 0 }
+  // },
+})
+
+router.afterEach((to, from) => {
+  // console.log('after')
+  window.scrollTo(0, 0)
 })
 
 export default router
