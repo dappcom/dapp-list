@@ -81,7 +81,9 @@ export default {
   },
   methods: {
     onDappCopy(url) {
-      window._hmt.push(['_copyDappUrlEvent', 'click', url])
+      if (window._hmt) {
+        window._hmt.push(['_trackEvent', 'onDappCopy', url])
+      }
     },
     getImg() {
       // console.log('done', this.$refs)

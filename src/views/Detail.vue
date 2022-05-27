@@ -208,7 +208,9 @@ export default {
 
   methods: {
     onCopy() {
-      window._hmt.push(['_copyUrlEvent', 'click', this.dappObj.url])
+       if (window._hmt) {
+        window._hmt.push(['_trackEvent', 'onDappCopy', this.dappObj.url])
+      }
     },
 
     getImg(index) {

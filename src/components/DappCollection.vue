@@ -189,6 +189,9 @@ export default {
       console.log('share')
     },
     goDetail() {
+      if (window._hmt) {
+        window._hmt.push(['_trackEvent', 'onDappCollection', this.dappObj.name])
+      }
       if (this.isEnterTitle || this.enterObj.collection) {
         this.$router.push(
           `/detail?id=${this.dappObj.id}&val=${
