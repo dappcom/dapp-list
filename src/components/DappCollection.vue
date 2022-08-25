@@ -277,6 +277,7 @@ export default {
     .dapp-img {
       width: 88px;
       height: 88px;
+      border-radius: 50%;
       // 设置img默认显示的图片，避免出现空白
       background-image: url('../assets/detail/default.png');
       background-size: contain;

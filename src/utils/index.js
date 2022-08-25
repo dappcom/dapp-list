@@ -1,4 +1,4 @@
-import _ from 'loadsh'
+// import _ from 'lodash'
 
 /** 模糊搜索匹配，传入目标数组和搜索的关键词 */
 export function FuzzySearch(targetArr, val) {
@@ -77,12 +77,14 @@ export const chainNameMap = {
   1: 'Ethereum',
   10: 'Optimistic',
   56: 'BSC',
+  61: 'ETC',
   66: 'OKExChain',
   128: 'HECO',
   137: 'Polygon',
   250: 'Fantom',
   321: 'KCC',
   8217: 'Klaytn',
+  42161: 'Arbitrum',
   43114: 'AVAX',
   1666600000: 'Harmony',
 }

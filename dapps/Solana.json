@@ -321,6 +321,91 @@
         }
       ],
       "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://app.atrix.finance/swap",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Atrix",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1655695877176.jpg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "network": "SOL"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://tulip.garden/leverage?src=Home",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Tulip Protocol",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1655696223426.jpg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "network": "SOL"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://app.quarry.so/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Quarry",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1655696523922.jpg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "network": "SOL"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://dex.aldrin.com/swap",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Aldrin",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1655705985326.jpg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "network": "SOL"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://app.friktion.fi/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Friktion",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1655706795825.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "network": "SOL"
+        }
+      ],
+      "navi_color": "0x2890fe"
     }
   ],
   "timestamp": "2022-01-23 20:37:00",

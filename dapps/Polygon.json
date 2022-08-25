@@ -163,24 +163,6 @@
       "navi_color": "0x000000"
     },
     {
-      "url": "https://bridge.connext.network/",
-      "full_screen": 0,
-      "source": 1,
-      "hori_vert": 0,
-      "protocol": "TIP-001",
-      "title_color": "0xffffff",
-      "title": "Connext",
-      "icon_url": "https://dashboard-assets.dappradar.com/document/14956/connext-dapp-defi-ethereum-logo-166x166_1cc6baadf074435dd06175001b7d638f.png",
-      "protocol_version": "1.0",
-      "chain_list": [
-        {
-          "chain_id": "10",
-          "network": "ethereum"
-        }
-      ],
-      "navi_color": "0x2890fe"
-    },
-    {
       "url": "https://apeswap.finance/",
       "full_screen": 0,
       "source": 1,
@@ -873,6 +855,94 @@
         },
         {
           "chain_id": "1284",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://app.parcel.money/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Parcel",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1653448107406.jpg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://izumi.finance/trade/swap",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "iZiSwap",
+      "icon_url": "https://tp-statics.cdn.bcebos.com/website/tokenpocket-1655382767912.jpg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "42161",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://exchange.idex.io/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "IDEX",
+      "icon_url": "https://tp-statics.cdn.bcebos.com/website/tokenpocket-1655996141475.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://app.teaparty.life/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "TeaParty",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1657010411890.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "137",
           "network": "ethereum"
         }
       ],

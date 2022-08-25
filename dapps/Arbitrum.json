@@ -1,0 +1,229 @@
+{
+  "dapp_list": [
+    {
+      "url": "https://izumi.finance/trade/swap",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "iZiSwap",
+      "icon_url": "https://tp-statics.cdn.bcebos.com/website/tokenpocket-1655382767912.jpg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "42161",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://www.bungee.exchange/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Bungee",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1655714524915.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "10",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "250",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "42161",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "43114",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://bridge.connext.network/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Connext",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1649910029392.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "10",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "42161",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://app.routerprotocol.com/swap",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Router",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1655719892395.jpeg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "42161",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://transferto.xyz/swap?fromChain=eth",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "LI.FI",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1655720381258.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "42161",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://app.rubic.exchange/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Rubic",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1655721110672.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "42161",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://app.rango.exchange/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Rango",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1655721509633.jpeg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "42161",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://saddle.exchange/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Saddle",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1660010743120.jpg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "10",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "250",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "9001",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "42161",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    }
+  ],
+  "timestamp": "2022-08-23 12:33:53",
+  "protocol": "TIP-001",
+  "name": "Arbitrum",
+  "logo_uri": "https://storageapi.fleek.co/23f83764-3d4b-43a7-b0f7-24e1d47e1d03-bucket/dapp-collection-logo/Arbitrum.png",
+  "version": "1.0"
+}

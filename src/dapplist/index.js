@@ -13,6 +13,8 @@ const collection12 = require('../../dapps/Polygon.json')
 const collection13 = require('../../dapps/Solana.json')
 const collection14 = require('../../dapps/TRON.json')
 const collection15 = require('../../dapps/KCCMainnet.json')
+const collection16 = require('../../dapps/Arbitrum.json')
+const collection17 = require('../../dapps/ETC.json')
 
 const dappCollection = [
   collection1,
@@ -30,6 +32,8 @@ const dappCollection = [
   collection13,
   collection14,
   collection15,
+  collection16,
+  collection17,
 ]
 const dappCollectionUrl = [
   'https://gitee.com/dapplist/dappcom/raw/master/dapp-list/AllNFT.json',
@@ -47,11 +51,36 @@ const dappCollectionUrl = [
   'https://gitee.com/dapplist/dappcom/raw/master/dapp-list/Solana.json',
   'https://gitee.com/dapplist/dappcom/raw/master/dapp-list/TRON.json',
   'https://gitee.com/dapplist/dappcom/raw/master/dapp-list/KCCMainnet.json',
+  'https://gitee.com/dapplist/dappcom/raw/master/dapp-list/Arbitrum.json',
+  'https://gitee.com/dapplist/dappcom/raw/master/dapp-list/ETC.json',
+]
+const dappCollectionTestUrl = [
+  'https://gitee.com/dapplist/dappcom/raw/dev/dapp-list/AllNFT.json',
+  'https://gitee.com/dapplist/dappcom/raw/dev/dapp-list/AVAX.json',
+  'https://gitee.com/dapplist/dappcom/raw/dev/dapp-list/EthereumdApps.json',
+  'https://gitee.com/dapplist/dappcom/raw/dev/dapp-list/EverythingBSC.json',
+  'https://gitee.com/dapplist/dappcom/raw/dev/dapp-list/Fantom.json',
+  'https://gitee.com/dapplist/dappcom/raw/dev/dapp-list/GameFi.json',
+  'https://gitee.com/dapplist/dappcom/raw/dev/dapp-list/Harmony.json',
+  'https://gitee.com/dapplist/dappcom/raw/dev/dapp-list/HECO.json',
+  'https://gitee.com/dapplist/dappcom/raw/dev/dapp-list/Klaytn.json',
+  'https://gitee.com/dapplist/dappcom/raw/dev/dapp-list/OKXChain.json',
+  'https://gitee.com/dapplist/dappcom/raw/dev/dapp-list/Optimistic.json',
+  'https://gitee.com/dapplist/dappcom/raw/dev/dapp-list/Polygon.json',
+  'https://gitee.com/dapplist/dappcom/raw/dev/dapp-list/Solana.json',
+  'https://gitee.com/dapplist/dappcom/raw/dev/dapp-list/TRON.json',
+  'https://gitee.com/dapplist/dappcom/raw/dev/dapp-list/KCCMainnet.json',
+  'https://gitee.com/dapplist/dappcom/raw/dev/dapp-list/Arbitrum.json',
+  'https://gitee.com/dapplist/dappcom/raw/dev/dapp-list/ETC.json',
 ]
 
 dappCollection.forEach((item, index) => {
   item.id = index
-  item.url = dappCollectionUrl[index]
+  if (process.env.NODE_ENV === 'test') {
+    item.url = dappCollectionTestUrl[index]
+  } else {
+    item.url = dappCollectionUrl[index]
+  }
 })
 
 export default dappCollection

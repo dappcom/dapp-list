@@ -524,24 +524,6 @@
       "navi_color": "0x691FA9"
     },
     {
-      "url": "https://bridge.connext.network/",
-      "full_screen": 0,
-      "source": 1,
-      "hori_vert": 0,
-      "protocol": "TIP-001",
-      "title_color": "0xffffff",
-      "title": "Connext",
-      "icon_url": "https://dashboard-assets.dappradar.com/document/14956/connext-dapp-defi-ethereum-logo-166x166_1cc6baadf074435dd06175001b7d638f.png",
-      "protocol_version": "1.0",
-      "chain_list": [
-        {
-          "chain_id": "10",
-          "network": "ethereum"
-        }
-      ],
-      "navi_color": "0x2890fe"
-    },
-    {
       "url": "https://www.cryptokitties.co/",
       "full_screen": 0,
       "source": 1,
@@ -834,6 +816,462 @@
         },
         {
           "chain_id": "1284",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://app.parcel.money/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Parcel",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1653448107406.jpg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://app.syndicate.io/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Syndicate",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1653448579579.jpg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://beta.layer3.xyz/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Layer3",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1653449295438.jpg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://www.prysm.xyz/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "prysm.eth",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1653449760976.jpg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://trade.zigzag.exchange/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "ZigZag Exchange",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1653459390215.jpg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://aztec.network/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Aztec",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1653463916114.jpg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://nft.wazirx.org/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "WazirX NFT Marketplace",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1653992227354.jpg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://izumi.finance/trade/swap",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "iZiSwap",
+      "icon_url": "https://tp-statics.cdn.bcebos.com/website/tokenpocket-1655382767912.jpg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "42161",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://www.bungee.exchange/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Bungee",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1655714524915.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "10",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "250",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "42161",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "43114",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://bridge.connext.network/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Connext",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1649910029392.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "10",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "42161",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://app.routerprotocol.com/swap",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Router",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1655719892395.jpeg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "42161",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://transferto.xyz/swap?fromChain=eth",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "LI.FI",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1655720381258.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "42161",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://app.rubic.exchange/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Rubic",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1655721110672.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "42161",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://app.rango.exchange/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Rango",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1655721509633.jpeg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "42161",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://nfteye.io/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "NFTEye",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1656472722581.jpg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://double.one/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Double Protocol",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1656994942239.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://www.partybid.app/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "PartyDAO",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1657088609274.jpg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://unstoppabledomains.com/?ref=8192ada7de4144e",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Unstoppable.nft",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1657615960674.jpg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://saddle.exchange/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Saddle",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1660010743120.jpg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "10",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "250",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "9001",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "42161",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://app.soy.finance/swap",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Soy Finance",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1660719756666.jpg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "61",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "250",
           "network": "ethereum"
         }
       ],

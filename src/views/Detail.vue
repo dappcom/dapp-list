@@ -189,8 +189,8 @@ export default {
   },
 
   beforeRouteLeave(to, from, next) {
-    console.log('to', to)
-    console.log('from', from)
+    // console.log('to', to)
+    // console.log('from', from)
     if (from.query.val) {
       window.localStorage.setItem(
         'enterObj',
@@ -208,7 +208,7 @@ export default {
 
   methods: {
     onCopy() {
-       if (window._hmt) {
+      if (window._hmt) {
         window._hmt.push(['_trackEvent', 'onDappCopy', this.dappObj.url])
       }
     },

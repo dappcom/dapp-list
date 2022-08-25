@@ -243,24 +243,6 @@
       "navi_color": "0x2890fe"
     },
     {
-      "url": "https://bridge.connext.network/",
-      "full_screen": 0,
-      "source": 1,
-      "hori_vert": 0,
-      "protocol": "TIP-001",
-      "title_color": "0xffffff",
-      "title": "Connext",
-      "icon_url": "https://dashboard-assets.dappradar.com/document/14956/connext-dapp-defi-ethereum-logo-166x166_1cc6baadf074435dd06175001b7d638f.png",
-      "protocol_version": "1.0",
-      "chain_list": [
-        {
-          "chain_id": "10",
-          "network": "ethereum"
-        }
-      ],
-      "navi_color": "0x2890fe"
-    },
-    {
       "url": "https://elk.finance/",
       "full_screen": 0,
       "source": 1,
@@ -365,6 +347,112 @@
         },
         {
           "chain_id": "1666600000",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://saddle.exchange/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Saddle",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1660010743120.jpg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "10",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "250",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "9001",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "42161",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://www.bungee.exchange/",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Bungee",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1655714524915.png",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "10",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "137",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "250",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "42161",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "43114",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    },
+    {
+      "url": "https://app.soy.finance/swap",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Soy Finance",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1660719756666.jpg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "61",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "250",
           "network": "ethereum"
         }
       ],

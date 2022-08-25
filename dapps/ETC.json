@@ -1,0 +1,39 @@
+{
+  "dapp_list": [
+    {
+      "url": "https://app.soy.finance/swap",
+      "full_screen": 0,
+      "source": 1,
+      "hori_vert": 0,
+      "protocol": "TIP-001",
+      "title_color": "0xffffff",
+      "title": "Soy Finance",
+      "icon_url": "https://tp-statics.tokenpocket.pro/dapp/tokenpocket-1660719756666.jpg",
+      "protocol_version": "1.0",
+      "chain_list": [
+        {
+          "chain_id": "1",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "56",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "61",
+          "network": "ethereum"
+        },
+        {
+          "chain_id": "250",
+          "network": "ethereum"
+        }
+      ],
+      "navi_color": "0x2890fe"
+    }
+  ],
+  "timestamp": "2022-08-23 12:33:53",
+  "protocol": "TIP-001",
+  "name": "ETC",
+  "logo_uri": "https://storageapi.fleek.co/23f83764-3d4b-43a7-b0f7-24e1d47e1d03-bucket/dapp-collection-logo/ETC.png",
+  "version": "1.0"
+}
